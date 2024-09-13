@@ -133,3 +133,45 @@ body {
     }
   }
 }
+
+//Contact
+.contact-section {
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  @media (max-width: 990px) {
+    height: 100%;
+  }
+  .contact_title {
+    font-size: 3rem;
+    font-family: $font-decor;
+    text-align: center;
+    padding-bottom: 10%;
+    margin-right: 5%;
+    @media (max-width: 990px) {
+      font-size: 2.2rem;
+      }
+  }
+  .contact-image {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/contact-img.jpeg');
+    background-size: cover;
+  }
+  .contact_btn {
+    background-color: transparent;
+    color:$text-color;
+    border-color: $text-color;
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin-top: 5%;
+    margin-left: 35%;
+    &:hover{
+      color:$bg-color;
+      border: none;
+      background-color: $text-color;
+    }
+  }
+}
