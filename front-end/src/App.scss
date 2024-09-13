@@ -60,19 +60,31 @@ body {
   }
   .hero-btn {
     margin-bottom: auto;
-    background: rgba(80, 68, 68, 0.2);
-    border: 1px solid rgba(167, 155, 155, 0.5);
-    color: $bg-color;
+    background: rgba(31, 26, 26, 0.2);
+    border: 1px solid rgba(184, 173, 173, 0.5);
+    color: $text-color;
     border-radius: 10px;
-    padding: 10px 25px;
-    font-size: 1.2rem;
+    padding: 10px 30px;
+    font-size: 1.5rem;
     font-weight: 500;
     cursor: pointer;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: floating 1s forwards infinite alternate;
+    transition: all 1.2s ease;
     &:hover {
-      background: rgba(87, 82, 82, 0.3);
-      border: 1px solid rgba(130, 120, 120, 0.7);
+      background: rgba(139, 132, 132, 0.3);
+      border: 1px solid rgba(184, 176, 176, 0.7);
+      animation: none;
     }
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: translateY(+2%);
   }
 }
