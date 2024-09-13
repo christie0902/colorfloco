@@ -4,13 +4,12 @@ import { Container, Row, Col, Image, Card } from "react-bootstrap";
 const Process = () => {
   return (
     <div className="process-section">
-      <img className="logo_img ms-5" src="\logo.png" alt="logo" />
       <Container>
         <Row>
-          <Col className="d-flex justify-content-center col-">
-            <Image className="card_image" src="\process-image.jpg" alt="process" width={400}/>
+          <Col className="d-flex justify-content-center col-sm-12 col-lg-6">
+            <Image className="card_image" src="\process-image.jpg" alt="process"/>
           </Col>
-          <Col className="d-flex justify-content-center">
+          <Col className="d-flex justify-content-center col-sm-12 col-md-6 m-md-auto">
             <Card className="card">
               <Card.Title className="card_title">Creation Process</Card.Title>
 

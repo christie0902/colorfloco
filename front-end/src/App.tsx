@@ -4,6 +4,7 @@ import './App.scss'
 import NavigationBar from './components/navbar/Navbar.tsx'
 import Hero from './components/hero/Hero.tsx';
 import Process from './components/process/Process.tsx';
+import Contact from './components/contact/Contact.tsx';
 
 function App() {
 
@@ -18,7 +19,9 @@ function App() {
     <div id="process">
       <Process/>
     </div>
-
+    <div id="contact">
+      <Contact/>
+    </div>
     </>
   )
 }
