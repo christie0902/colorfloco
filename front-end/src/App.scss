@@ -88,3 +88,28 @@ body {
     transform: translateY(+2%);
   }
 }
+
+//Process
+.process-section {
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+
+  .card_image{
+    margin-top: 10%;
+  }
+  .card {
+    margin-top: 20%;
+    background-color:transparent;
+    border: none;
+    width: 80%;
+    .card_title{
+      font-size: 3rem;
+      font-family: $font-decor;
+    }
+    .card_text{
+      font-size: 1.4rem;
+      margin-top: 10%;
+    }
+  }
+}
