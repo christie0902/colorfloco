@@ -1,0 +1,78 @@
+@import "bootstrap/scss/bootstrap";
+
+$bg-color: #fafffd;
+$text-color: #252829;
+$font-main: "Inter", sans-serif;
+$font-decor: "Caladea", serif;
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+//Navbar
+.navbar-container {
+  height: 10vh;
+}
+.navbar-toggler {
+  border: none;
+}
+
+.logo_img {
+  width: 250px;
+  @media (max-width: 990px) {
+    width: 150px;
+  }
+}
+.nav-link {
+  font-family: $font-main;
+  font-weight: 500;
+}
+
+//Hero
+.hero-container {
+  background-image: url("\hero_image.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 90vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .hero-title {
+    width: 40em;
+    margin-bottom: auto;
+    margin-top: 5%;
+    @media (max-width: 990px) {
+      width: 30em;
+      margin-top: 20%;
+    }
+    @media (max-width: 576px) {
+      width: 25em;
+      margin-top: 30%;
+    }
+  }
+  .hero-btn {
+    margin-bottom: auto;
+    background: rgba(80, 68, 68, 0.2);
+    border: 1px solid rgba(167, 155, 155, 0.5);
+    color: $bg-color;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background: rgba(87, 82, 82, 0.3);
+      border: 1px solid rgba(130, 120, 120, 0.7);
+    }
+  }
+}
