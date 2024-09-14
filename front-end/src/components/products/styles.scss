@@ -1,0 +1,18 @@
+.product-container {
+  height: 100vh;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  .placeholder-scarf-accent {
+    width: 50vw;
+    position: absolute;
+    right: 65vw;
+    rotate: -25deg;
+    top: 0;
+  }
+}

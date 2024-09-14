@@ -1,4 +1,13 @@
 @import "bootstrap/scss/bootstrap";
+@import "./lib/styles/components";
+
+* {
+  caret-color: transparent;
+}
+
+input {
+  caret-color: auto;
+}
 
 $bg-color: #fafffd;
 $text-color: #252829;
