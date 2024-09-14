@@ -3,7 +3,9 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 const NavigationBar = () => {
   return (
-    <Navbar expand="lg" className="navbar-container justify-content-between py-0">
+    <>
+    <div className="nav-placeholder"></div>
+    <Navbar expand="lg" className="navbar-container justify-content-between py-0 position-fixed w-100">
       <Container>
         <Navbar.Brand href="#home">
           <img className="logo_img" src="\logo.png" alt="logo"  />
@@ -29,6 +31,7 @@ const NavigationBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </>
   );
 };
 

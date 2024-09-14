@@ -15,8 +15,14 @@ body {
 }
 
 //Navbar
+.nav-placeholder{
+  height: 10vh;
+}
 .navbar-container {
   height: 10vh;
+  background: $bg-color;
+  top:0;
+  z-index: 10;
 }
 .navbar-toggler {
   border: none;
@@ -103,73 +109,106 @@ body {
   align-items: center;
   @media (max-width: 990px) {
     height: 100%;
-   
   }
-  .card_image{
+  .card_image {
     margin-top: 10%;
     // display: flex;
+    @media (max-width: 1024px) {
+      width: 400px;
+      object-fit: contain;
+    }
   }
   .card {
     margin-top: 20%;
-    background-color:transparent;
+    background-color: transparent;
     border: none;
     width: 80%;
     @media (max-width: 990px) {
       width: 100%;
     }
-    .card_title{
+    .card_title {
       font-size: 3rem;
       font-family: $font-decor;
       @media (max-width: 990px) {
-      font-size: 2.2rem;
+        font-size: 2.2rem;
       }
     }
-    .card_text{
+    .card_text {
       font-size: 1.4rem;
       margin-block: 10%;
       @media (max-width: 990px) {
         font-size: 1rem;
-        }
+      }
     }
   }
 }
 
-//Contact
+// Contact Section
 .contact-section {
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   margin: auto;
   display: flex;
   align-items: center;
+
   @media (max-width: 990px) {
     height: 100%;
   }
+
   .contact_title {
     font-size: 3rem;
     font-family: $font-decor;
     text-align: center;
     padding-bottom: 10%;
-    margin-right: 5%;
     @media (max-width: 990px) {
       font-size: 2.2rem;
-      }
+    }
+  }
+
+  .contact-form-wrapper {
+    z-index: 2;
+    padding: 2rem;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      background: $bg-color;
+
+      // .form-container {
+      //   width: 100%;
+      //   max-width: 500px;
+      //   background-color: white;
+      //   padding: 20px;
+      //   border-radius: 10px;
+      //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      // }
+    }
   }
   .contact-image {
     height: 100vh;
-    width: 100vw;
-    background-image: url('/contact-img.jpeg');
+    background-image: url("/contact-img.jpeg");
     background-size: cover;
+    background-position: center;
+
+    @media (max-width: 992px) {
+      height: 50vh;
+      width: 100vw;
+      height: 40vh;
+    }
   }
+
   .contact_btn {
     background-color: transparent;
-    color:$text-color;
+    color: $text-color;
     border-color: $text-color;
     border-radius: 50px;
     padding: 10px 40px;
-    margin-top: 5%;
-    margin-left: 35%;
-    &:hover{
-      color:$bg-color;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    &:hover {
+      color: $bg-color;
       border: none;
       background-color: $text-color;
     }
